@@ -1,0 +1,14 @@
+name = "frobenius-sat"
+version = "0.1.0"
+defaultTargets = ["FrobeniusSat", "frobenius-sat"]
+
+[[lean_lib]]
+name = "FrobeniusSat"
+
+[[lean_exe]]
+name = "frobenius-sat"
+root = "Main"
+
+[[lean_exe]]
+name = "tests"
+root = "Tests"
