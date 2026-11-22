@@ -8,7 +8,7 @@ Use any external SAT solver from Lean 4, but trust only what Lean can check.
 - `.unsat h` where `h : cnf.Unsat`. Lean's verified LRAT checker (`Std.Tactic.BVDecide.LRAT.check_sound`, the same checker `bv_decide` uses) accepted the solver's certificate.
 - `.rejected reason` for anything else. That includes a correct answer that comes with no certificate.
 
-A solver's speed matters only if its output can be checked. This library is built for that.
+A fast UNSAT answer with no proof is a claim, not a result. Lean checks LRAT proofs in time roughly linear in their size, so a solver can be untrusted and still useful.
 
 ## Solvers
 
