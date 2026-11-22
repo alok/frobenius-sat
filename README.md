@@ -40,3 +40,5 @@ The suite runs honest CaDiCaL on a small SAT instance and on pigeonhole PHP(4,3)
 - no verdict at all
 
 Toolchain: Lean `v4.36.0`, no Mathlib.
+
+License: Apache-2.0 (same as Lean core).
